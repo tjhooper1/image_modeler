@@ -1,0 +1,61 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(14,6,147);
+    background: linear-gradient(90deg, rgba(14,6,147,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    color: white;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.header h1{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imgContainer{
+    width: 75%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    top: 20%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+}
+.img{
+    width: 100%;
+}
+.wayPointContainer{
+    height: 20px;   
+    width: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    top: 200px;
+}
+.wayPoint{
+    background: rgb(189, 14, 14);
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;   
+}
+.textContainer{
+    width: 50%;
+    background: white;
+    color: black;
+    height: 25%;
+    position: relative;
+    display: none;
+}
