@@ -1,19 +1,23 @@
 
-const wayPointContainer = document.querySelector('.wayPointContainer');
+
 const img = document.querySelector('.imgContainer');
 let counter = 0;
 
-img.addEventListener('click', function(event){
+$(img).on('click', function(e){
+    const htmlString = `<div data-id=${counter} class="wayPoint" style="left: ${e.pageX - 10}px; top: ${e.pageY - 10}px;"></div>`
     counter += 1;
-    console.log(event);
-    const newWayPoint = document.createElement('div')
-    newWayPoint.classList.add('wayPointContainer');
-    newWayPoint.dataset.id = counter;
-    const wayPoint = document.createElement('div');
-    wayPoint.classList.add('wayPoint');
-    newWayPoint.append(wayPoint);
-    newWayPoint.style.position = 'absolute';
-    newWayPoint.style.left = event.pageX - 10 + 'px';
-    newWayPoint.style.top = event.pageY - 10 + 'px'
-    document.body.append(newWayPoint);
-})
+    $(img).append(htmlString);
+    $('.wayPoint').on('click', function(){
+        $('.wayPoint').attr('data-target', '#myModal');
+        $('.wayPoint').attr('data-toggle', 'modal');
+    });
+});
+
+    
+
+
+
+
+// $('.wayPoint').on('click', function(e){
+//     console.log(e);
+// })
