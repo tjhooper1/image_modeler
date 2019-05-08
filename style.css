@@ -92,5 +92,21 @@ body{
     height: 62px;
     border-radius: 25px;
     background-color: white;
-    
+}
+
+.textContainer{
+    background: white;
+    color: black;
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    display: none;
+}
+
+.textContainer h1{
+    border-bottom: 1px solid rgb(172, 172, 172);
+    margin: auto;
+    width: 50%;
 }
