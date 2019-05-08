@@ -23,17 +23,18 @@ body{
 }
 
 .imgContainer{
-    width: 75%;
+    height: 50vh;
+    width: 50%;
     display: flex;
     align-content: center;
     align-items: center;
-    /* position: relative; */
     margin: 0;
     padding: 0;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10%;
 }
 .img{
+    height: 100%;
     width: 100%;
 }
 .wayPoint{
@@ -50,7 +51,7 @@ body{
 .modalContainer{
     width: 80vw;
     color: black;
-    height: 30vh;
+    height: 80vh;
     background: #6ef8ff;
     margin: auto;
     position: absolute;

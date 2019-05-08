@@ -40,9 +40,9 @@ function showForm(id) {
 }    
 
 //Function that closes the modal form.
-$('#close').on('click', function(){
-    $('.modalContainer').css('display', 'none');
-});
+// $('#close').on('click', function(){
+//     $('.modalContainer').css('display', 'none');
+// });
 
 //Function that saves the value from the modal to an object called info
 $('#save').on('click', function(id){
